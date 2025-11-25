@@ -1,39 +1,69 @@
-# Keylogger
+## Keylogger
 
 <p align="center">
-<img src="Logotipo.png">
+  <img src="./Img/Logo.png" height="300px" width="350px">
 </p>
 
-Un keylogger es una herramienta de software que registra y monitoriza las pulsaciones de teclas realizadas en un dispositivo, sin el conocimiento ni el consentimiento del usuario.
+Un **keylogger** es una herramienta de software que registra y monitoriza las pulsaciones de teclas realizadas en un dispositivo.  
+Este proyecto incluye un script para configurar y ejecutar tu propio keylogger con fines educativos.
 
-```
-sudo apt-get update && sudo apt install -y python3-pip xclip lolcat figlet && python3 -m pip install --upgrade colorama
+---
 
-git clone https://github.com/bl4ck44/Keylogger.git
+## ⚙️ Requisitos
 
-cd Keylogger
+- Sistema operativo: Linux (Ubuntu/Kali recomendado)
+- Python 3.8 o superior
+- Librerías incluidas en `requirements.txt`
 
+Instala las dependencias necesarias:
+
+```bash
+sudo apt-get update && sudo apt install -y python3-pip xclip lolcat figlet
+python3 -m pip install --upgrade colorama
 pip install -r requirements.txt
+```
 
+---
+
+## 🚀 Instalación
+
+Clona el repositorio y accede al directorio:
+
+```bash
+git clone https://github.com/bl4ck44/Keylogger.git
+cd Keylogger
+```
+
+**NOTA:** Al generar el keylogger remoto se debe configurar en el script el usuario y contraseña del correo en donde llegara los registros.
+
+---
+
+## ▶️ Uso
+
+```bash
 python3 menu.py
 ```
 
-<br>
-
 <p align="center">
-<img src="Img/muestra1.png">
+  <img src="./Img/Captura1.png">
 </p>
 
-**NOTA:** Al generar el keylogger remoto hay que configurar el usuario y contraseña en el script.
-
 <p align="center">
-<img src="Img/muestra2.png">
+  <img src="./Img/Captura2.png">
 </p>
 
-### ⚠️ **Aviso**
+---
 
-Este script ha sido desarrollado únicamente con fines **educativos y de investigación en ciberseguridad**.
 
-No me responsabilizo del mal uso que se pueda dar ni de los daños que puedan ocasionarse por su ejecución.
+## 📜 Licencia
 
-El uso indebido de este material puede ser **ilegal**.
+Este proyecto está bajo la licencia GPL.  
+Puedes usarlo libremente con fines educativos y de investigación.
+
+---
+
+## ⚠️ Aviso
+
+Este script ha sido desarrollado únicamente con fines **educativos y de investigación en ciberseguridad**.  
+El uso indebido de este material puede ser **ilegal**.  
+No me responsabilizo del mal uso ni de los daños que puedan ocasionarse por su ejecución.
