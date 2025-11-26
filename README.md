@@ -4,8 +4,7 @@
   <img src="./Img/Logo.png" height="300px" width="350px">
 </p>
 
-Un **keylogger** es una herramienta de software que registra y monitoriza las pulsaciones de teclas realizadas en un dispositivo.  
-Este proyecto incluye un script para configurar y ejecutar tu propio keylogger con fines educativos.
+Un **keylogger** es una herramienta de software que registra y monitoriza las pulsaciones de teclas realizadas en un dispositivo. Este proyecto incluye un script para configurar y ejecutar tu propio keylogger con fines educativos.
 
 ---
 
@@ -57,13 +56,10 @@ python3 menu.py
 
 ## 📜 Licencia
 
-Este proyecto está bajo la licencia GPL.  
-Puedes usarlo libremente con fines educativos y de investigación.
+Este proyecto está bajo la licencia GPL. Puedes usarlo libremente con fines educativos y de investigación.
 
 ---
 
 ## ⚠️ Aviso
 
-Este script ha sido desarrollado únicamente con fines **educativos y de investigación en ciberseguridad**.  
-El uso indebido de este material puede ser **ilegal**.  
-No me responsabilizo del mal uso ni de los daños que puedan ocasionarse por su ejecución.
+Este script ha sido desarrollado únicamente con fines **educativos y de investigación en ciberseguridad**. El uso indebido de este material puede ser **ilegal**. No me responsabilizo del mal uso ni de los daños que puedan ocasionarse por su ejecución.
