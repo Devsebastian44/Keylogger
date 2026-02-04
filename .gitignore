@@ -1,0 +1,53 @@
+# === PROJECT STRUCTURE ===
+# Folders
+docs/
+diagrams/
+configs/
+src/
+
+# === DATA & LOGS ===
+logs/
+*.log
+data/
+
+# === PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# === SECURITY (GitLab Only) ===
+# The following items should be pushed to GitLab but NOT to GitHub.
+# Use a specific branch for Public release and keep these ignored there.
+payloads/
+bin/
+tests/
+
+# === ENVIRONMENT VARIABLES ===
+.env
+.flaskenv
+configs/*.env
+configs/*.yaml
+configs/*.json
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === DUAL-REPO STRATEGY CAUTION ===
+# WARNING: Ensure you have a 'public' branch where sensitive 
+# files in src/core/ are replaced with pseudocode before pushing to GitHub.

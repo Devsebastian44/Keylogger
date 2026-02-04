@@ -1,65 +1,90 @@
-## Keylogger
+# 🛡️ Sentinel Framework: Educational Keylogger & Research Tool
 
 <p align="center">
-  <img src="./Img/Logo.png" height="300px" width="350px">
+  <img src="./docs/assets/Img/Logo.png" height="300px" width="350px">
 </p>
 
-Un **keylogger** es una herramienta de software que registra y monitoriza las pulsaciones de teclas realizadas en un dispositivo. Este proyecto incluye un script para configurar y ejecutar tu propio keylogger con fines educativos.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python: 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![Security: Bandit](https://img.shields.io/badge/Security-Checked-green.svg)](https://github.com/PyCQA/bandit)
+
+Este proyecto es un **Framework de Ciberseguridad Educativa** diseñado para demostrar los principios de captura de eventos, persistencia y exfiltración de datos en entornos controlados de laboratorio.
+
+> [!IMPORTANT]
+> **DISCLAIMER ÉTICO:** Este software ha sido desarrollado exclusivamente con fines educativos y de investigación. El uso de esta herramienta contra objetivos sin consentimiento previo es ilegal y poco ético. El autor no se hace responsable del mal uso de este código.
 
 ---
 
-## ⚙️ Requisitos
+## 🏗️ Arquitectura del Sistema
 
-- Sistema operativo: Linux (Ubuntu/Kali recomendado)
-- Python 3.8 o superior
-- Librerías incluidas en `requirements.txt`
+El proyecto sigue una estructura modular y escalable pensada para entornos DevSecOps profesonales:
 
-Instala las dependencias necesarias:
-
-```bash
-sudo apt-get update && sudo apt install -y python3-pip xclip lolcat figlet
-python3 -m pip install --upgrade colorama
-pip install -r requirements.txt
-```
+| Carpeta | Propósito |
+| :--- | :--- |
+| `src/` | Núcleo del framework y lógica de captura. |
+| `tests/` | Pruebas de integración y simulación de comportamiento. |
+| `docs/` | Documentación técnica detallada y políticas de ética. |
+| `diagrams/` | Visualización de flujos de datos y arquitectura. |
+| `configs/` | Archivos de configuración y dependencias. |
 
 ---
 
-## 🚀 Instalación
+## 🔒 Estrategia de Seguridad (GitHub vs GitLab)
 
-Clona el repositorio y accede al directorio:
+Este repositorio utiliza una estrategia de **Diferenciación de Entornos**:
 
-```bash
-git clone https://github.com/bl4ck44/Keylogger.git
-cd Keylogger
-```
-
-**NOTA:** Al generar el keylogger remoto se debe configurar en el script el usuario y contraseña del correo en donde llegara los registros.
+- **GitHub (Público):** Escaparate para portafolio. Contiene la estructura, documentación, diagramas y **pseudocódigo educativo** para evitar la distribución de malware funcional.
+- **GitLab (Privado):** Laboratorio de desarrollo. Contiene la implementación completa, payloads funcionales, tests automatizados y el pipeline de CI/CD con análisis estático de seguridad (SAST).
 
 ---
 
-## ▶️ Uso
+## 🚀 Instalación y Uso (Laboratorio)
 
-```bash
-python3 menu.py
-```
+1. **Clonar el repositorio:**
+
+   ```bash
+   git clone https://gitlab.com/username/keylogger-lab.git
+   ```
+2. **Configurar entorno:**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r configs/requirements.txt
+   ```
+3. **Ejecutar en modo educativo:**
+
+   ```bash
+   python src/main.py --mode dry-run
+   ```
+
+---
+
+## 🛠️ Pipeline DevSecOps
+
+El proyecto integra un flujo de trabajo automatizado en GitLab Cielo:
+
+- **Linting:** Validación de estándares de código.
+- **SAST:** Escaneo de vulnerabilidades con `bandit`.
+- **Unit Testing:** Validación de módulos con `pytest`.
+
+---
+
+## 📸 Demostración Visual (Proof of Work)
+
+Para entender cómo opera el framework sin necesidad de ejecución, aquí se presentan capturas del entorno de laboratorio:
 
 <p align="center">
-  <img src="./Img/Captura1.png">
+  <img src="./docs/assets/Img/sentinel-cli-interface.png" alt="Sentinel CLI Output" width="45%">
+  <img src="./docs/assets/Img/log-file-structure.png" alt="Log Generation" width="45%">
 </p>
 
-<p align="center">
-  <img src="./Img/Captura2.png">
-</p>
+*Estas capturas demuestran la capacidad de interceptación y el formateo de logs en tiempo real.*
 
 ---
 
+## 📝 Documentación Adicional
 
-## 📜 Licencia
-
-Este proyecto está bajo la licencia GPL. Puedes usarlo libremente con fines educativos y de investigación.
-
----
-
-## ⚠️ Aviso
-
-Este script ha sido desarrollado únicamente con fines **educativos y de investigación en ciberseguridad**. El uso indebido de este material puede ser **ilegal**. No me responsabilizo del mal uso ni de los daños que puedan ocasionarse por su ejecución.
+- [Guía de Ética y Legalidad](docs/ethics.md)
+- [Arquitectura Detallada](docs/architecture.md)
+- [Diagramas de Flujo](diagrams/data_flow.md)
