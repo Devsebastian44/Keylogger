@@ -1,7 +1,6 @@
 import argparse
-import sys
-import os
 from core.examples import EducationalKeylogger
+
 
 def banner():
     print("""
@@ -11,15 +10,20 @@ def banner():
     #######################################
     """)
 
+
 def main():
     banner()
     parser = argparse.ArgumentParser(description="Sentinel Framework Tool")
-    parser.add_argument('--mode', choices=['dry-run', 'active', 'test'], default='dry-run',
-                        help="Select operation mode (default: dry-run)")
-    parser.add_argument('--output', type=str, help="Path to save logs (GitLab only)")
-    
+    parser.add_argument(
+        '--mode', choices=['dry-run', 'active', 'test'], default='dry-run',
+        help="Select operation mode (default: dry-run)"
+    )
+    parser.add_argument(
+        '--output', type=str, help="Path to save logs (GitLab only)"
+    )
+
     args = parser.parse_args()
-    
+
     if args.mode == 'dry-run':
         print("[*] Iniciando en MODO EDUCATIVO (Dry Run)...")
         engine = EducationalKeylogger()
@@ -33,11 +37,14 @@ def main():
             engine = RealEngine(output=args.output)
             engine.start()
         except ImportError:
-            print("[ERROR] El motor de laboratorio no está disponible en esta versión pública.")
-            print("[INFO] Consulte el repositorio privado en GitLab para la implementación completa.")
+            msg = "[ERROR] El motor de laboratorio no está disponible."
+            print(msg)
+            print("[INFO] Consulte el repositorio privado en GitLab.")
     elif args.mode == 'test':
-        print("[*] Ejecutando simulación de comportamiento para validación de defensas...")
-        # Lógica para inyectar eventos de teclado simulados y ver si el AV los detecta.
+        msg = "[*] Ejecutando simulación de comportamiento..."
+        print(msg)
+        # Lógica para inyectar eventos de teclado simulados.
+
 
 if __name__ == "__main__":
     main()
