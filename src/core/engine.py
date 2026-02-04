@@ -1,7 +1,10 @@
 try:
     from pynput.keyboard import Key, Listener
 except ImportError:
-    msg = "[ERROR] 'pynput' no está instalado. Instálalo con 'pip install pynput'"
+    msg = (
+        "[ERROR] 'pynput' no está instalado. "
+        "Instálalo con 'pip install pynput'"
+    )
     print(msg)
     Listener = None
 
