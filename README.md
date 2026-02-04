@@ -60,3 +60,5 @@ El proyecto integra un flujo de trabajo automatizado en GitLab Cielo:
 - [Guía de Ética y Legalidad](docs/ethics.md)
 - [Arquitectura Detallada](docs/architecture.md)
 - [Diagramas de Flujo](diagrams/data_flow.md)
+
+ya
