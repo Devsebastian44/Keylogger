@@ -1,9 +1,22 @@
-# === PROJECT STRUCTURE ===
-# Folders
-docs/
-diagrams/
-configs/
-src/
+# === PROJECT STRUCTURE (Allowed for Portfolio) ===
+# We allow these but ignore specific sub-files
+!docs/
+!diagrams/
+!configs/
+!src/
+
+# === SENSITIVE/INTERNAL (GitLab Only) ===
+tests/
+payloads/
+bin/
+logs/
+src/core/engine.py
+
+# === CONFIGS SECURITY ===
+configs/*.env
+configs/*.json
+!configs/requirements.txt
+!configs/settings.yaml
 
 # === DATA & LOGS ===
 logs/

@@ -1,9 +1,7 @@
 # 🛡️ Sentinel Framework: Educational Keylogger & Research Tool
 
-<p align="center">
-  <img src="./docs/assets/Img/Logo.png" height="300px" width="350px">
-</p>
 
+[![GitLab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/github-backup4/keylogger-research?branch=main&gitlab_url=https%3A%2F%2Fgitlab.com&label=GitLab%20CI)](https://gitlab.com/github-backup4/keylogger-research/-/pipelines)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![Security: Bandit](https://img.shields.io/badge/Security-Checked-green.svg)](https://github.com/PyCQA/bandit)
@@ -38,12 +36,14 @@ Este repositorio utiliza una estrategia de **Diferenciación de Entornos**:
 
 ---
 
-## 🚀 Instalación y Uso (Laboratorio)
+## 🚀 Instalación y Uso (Laboratorio Privado)
+
+> [!NOTE]
+> Estas instrucciones son para el entorno de desarrollo en **GitLab**. El acceso a la implementación completa está restringido.
 
 1. **Clonar el repositorio:**
-
    ```bash
-   git clone https://gitlab.com/username/keylogger-lab.git
+   git clone https://gitlab.com/github-backup4/keylogger-research.git
    ```
 2. **Configurar entorno:**
 
@@ -67,19 +67,6 @@ El proyecto integra un flujo de trabajo automatizado en GitLab Cielo:
 - **Linting:** Validación de estándares de código.
 - **SAST:** Escaneo de vulnerabilidades con `bandit`.
 - **Unit Testing:** Validación de módulos con `pytest`.
-
----
-
-## 📸 Demostración Visual (Proof of Work)
-
-Para entender cómo opera el framework sin necesidad de ejecución, aquí se presentan capturas del entorno de laboratorio:
-
-<p align="center">
-  <img src="./docs/assets/Img/sentinel-cli-interface.png" alt="Sentinel CLI Output" width="45%">
-  <img src="./docs/assets/Img/log-file-structure.png" alt="Log Generation" width="45%">
-</p>
-
-*Estas capturas demuestran la capacidad de interceptación y el formateo de logs en tiempo real.*
 
 ---
 
