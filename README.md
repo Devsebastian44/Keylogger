@@ -36,27 +36,12 @@ Este repositorio utiliza una estrategia de **Diferenciación de Entornos**:
 
 ---
 
-## 🚀 Instalación y Uso (Laboratorio Privado)
+## 🚀 Instalación y Acceso (Bajo Petición)
 
-> [!NOTE]
-> Estas instrucciones son para el entorno de desarrollo en **GitLab**. El acceso a la implementación completa está restringido.
+> [!IMPORTANT]
+> El acceso al repositorio de laboratorio, los payloads funcionales y las instrucciones de despliegue está restringido a investigadores autorizados para prevenir el mal uso de la herramienta.
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://gitlab.com/github-backup4/keylogger-research.git
-   ```
-2. **Configurar entorno:**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r configs/requirements.txt
-   ```
-3. **Ejecutar en modo educativo:**
-
-   ```bash
-   python src/main.py --mode dry-run
-   ```
+Para solicitar acceso al entorno de desarrollo en **GitLab** y la documentación técnica completa, por favor contactar al desarrollador.
 
 ---
 
