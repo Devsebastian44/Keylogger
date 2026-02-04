@@ -1,12 +1,13 @@
-# === PROJECT STRUCTURE (Allowed for Portfolio) ===
-# We allow these but ignore specific sub-files
+# === PROJECT STRUCTURE (Public Portfolio Ready) ===
 !docs/
 !diagrams/
 !configs/
 !src/
-
-# === SENSITIVE/INTERNAL (GitLab Only) ===
 !tests/
+
+# === SENSITIVE/INTERNAL (Private Lab Only) ===
+# These are kept but ignored in public branches manually
+# or handled via special ignore rules
 payloads/
 bin/
 logs/
@@ -19,7 +20,6 @@ configs/*.json
 !configs/settings.yaml
 
 # === DATA & LOGS ===
-logs/
 *.log
 data/
 
@@ -32,7 +32,6 @@ __pycache__/
 env/
 venv/
 pip-log.txt
-pip-delete-this-directory.txt
 .tox/
 .coverage
 .cache
@@ -41,26 +40,14 @@ coverage.xml
 *,cover
 .hypothesis/
 
-# === SECURITY (GitLab Only) ===
-# The following items should be pushed to GitLab but NOT to GitHub.
-# Use a specific branch for Public release and keep these ignored there.
-payloads/
-bin/
-tests/
-
-# === ENVIRONMENT VARIABLES ===
-.env
-.flaskenv
-configs/*.env
-configs/*.yaml
-configs/*.json
-
-# === IDE ===
+# === IDE & OS ===
 .vscode/
 .idea/
 *.swp
 *.swo
+.DS_Store
+Thumbs.db
 
-# === DUAL-REPO STRATEGY CAUTION ===
-# WARNING: Ensure you have a 'public' branch where sensitive 
-# files in src/core/ are replaced with pseudocode before pushing to GitHub.
+# === DUAL-REPO STRATEGY ===
+# GitLab (Private): Contains everything including engine.py
+# GitHub (Public): Needs a clean branch without engine.py or tests
