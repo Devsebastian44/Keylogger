@@ -39,6 +39,7 @@ security_scan:
 run_tests:
   stage: test
   script:
+    - export PYTHONPATH=$CI_PROJECT_DIR
     - pytest tests/ --junitxml=report.xml
   artifacts:
     reports:
