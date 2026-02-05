@@ -1,10 +1,11 @@
 # 🛡️ Sentinel Framework: Educational Keylogger & Research Tool
 
-
-[![GitLab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/github-backup4/keylogger-research?branch=main&gitlab_url=https%3A%2F%2Fgitlab.com&label=GitLab%20CI)](https://gitlab.com/github-backup4/keylogger-research/-/pipelines)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python: 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
-[![Security: Bandit](https://img.shields.io/badge/Security-Checked-green.svg)](https://github.com/PyCQA/bandit)
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab-Repository-orange?logo=gitlab)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
+![Educational](https://img.shields.io/badge/Purpose-Educational%20Only-blue)
+![Warning](https://img.shields.io/badge/⚠-Authorized%20Use%20Only-red)
 
 Este proyecto es un **Framework de Ciberseguridad Educativa** diseñado para demostrar los principios de captura de eventos, persistencia y exfiltración de datos en entornos controlados de laboratorio.
 
