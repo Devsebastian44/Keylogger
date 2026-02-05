@@ -24,13 +24,13 @@ before_script:
 lint_code:
   stage: lint
   script:
-    - flake8 src/ tests/
+    - python -m flake8 src/ tests/
   allow_failure: true
 
 security_scan:
   stage: security
   script:
-    - bandit -r src/ -f json -o security-report.json
+    - python -m bandit -r src/ -f json -o security-report.json
   artifacts:
     paths:
       - security-report.json
@@ -40,7 +40,7 @@ run_tests:
   stage: test
   script:
     - export PYTHONPATH=$CI_PROJECT_DIR
-    - pytest tests/ --junitxml=report.xml
+    - python -m pytest tests/ --junitxml=report.xml
   artifacts:
     reports:
       junit: report.xml

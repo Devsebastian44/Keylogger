@@ -45,7 +45,29 @@ Para solicitar acceso al entorno de desarrollo en **GitLab** y la documentación
 
 ---
 
-## 🛠️ Pipeline DevSecOps
+## 🛠️ Modo de Uso
+
+El framework se controla mediante argumentos desde la terminal:
+
+```bash
+# Modo Educativo (Seguro / Dry Run) - Por defecto
+python src/main.py --mode dry-run
+
+# Modo Simulación (Test)
+python src/main.py --mode test
+
+# Modo Laboratorio (Activo) - Requiere acceso privado
+python src/main.py --mode active --output logs/sesion_001.log
+```
+
+| Argumento | Descripción |
+| :--- | :--- |
+| `--mode` | Selecciona el modo: `dry-run`, `active` o `test`. |
+| `--output` | Especifica la ruta de salida para los logs (solo en modo `active`). |
+
+---
+
+## 🏗️ Pipeline DevSecOps
 
 El proyecto integra un flujo de trabajo automatizado en GitLab Cielo:
 
