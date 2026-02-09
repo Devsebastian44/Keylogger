@@ -37,14 +37,10 @@ Este repositorio utiliza una estrategia de **Diferenciación de Entornos**:
 
 ---
 
-## 🚀 Instalación y Acceso (Bajo Petición)
+## 🚀 Instalación y Acceso
 
 > [!IMPORTANT]
-> El acceso al repositorio de laboratorio, los payloads funcionales y las instrucciones de despliegue está restringido a investigadores autorizados para prevenir el mal uso de la herramienta.
-
-Para solicitar acceso al entorno de desarrollo en **GitLab** y la documentación técnica completa, por favor contactar al desarrollador.
-
----
+> El repositorio completo con todo el código funcional está disponible en **GitLab** para acceso completo.
 
 ## 🛠️ Modo de Uso
 
