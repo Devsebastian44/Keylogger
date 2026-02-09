@@ -21,6 +21,7 @@ El proyecto sigue una estructura modular y escalable pensada para entornos DevSe
 | Carpeta | Propósito |
 | :--- | :--- |
 | `src/` | Núcleo del framework y lógica de captura. |
+| `scripts/` | Scripts de automatización y configuración. |
 | `tests/` | Pruebas de integración y simulación de comportamiento. |
 | `docs/` | Documentación técnica detallada y políticas de ética. |
 | `diagrams/` | Visualización de flujos de datos y arquitectura. |
