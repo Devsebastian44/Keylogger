@@ -39,6 +39,8 @@ git rm --cached src/core/engine.py -f 2>$null
 # Eliminar este script de publicación del portafolio público
 git rm --cached publish_public.ps1 -f 2>$null
 
+git rm -r --cached scripts/ -f 2>$null
+
 # 4. Confirmar limpieza y subir
 git commit -m "docs: release update to public portfolio" --allow-empty
 Write-Host "[*] Subiendo a GitHub (Público)..." -ForegroundColor Green
